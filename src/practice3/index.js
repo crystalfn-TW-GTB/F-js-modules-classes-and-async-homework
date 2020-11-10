@@ -18,7 +18,7 @@
 //     });
 // };
 
-const getPoetryWithAsync = async function () {
+async function getPoetryWithAsync() {
   const response = await fetch("https://v1.jinrishici.com/all.json");
 
   if (response.ok) {
@@ -27,7 +27,7 @@ const getPoetryWithAsync = async function () {
   }
 
   throw new Error("There are something error.");
-};
+}
 
 // export default getPoetryWithPromise;
 export default getPoetryWithAsync;
